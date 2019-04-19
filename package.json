@@ -1,13 +1,6 @@
 {
   "name": "el-riot4",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
+  "version": "0.0.0",
   "license": "AGPL-3.0",
   "dependencies": {
     "riot": "^4.0.0-rc.2"
