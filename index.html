@@ -8,9 +8,8 @@
   <p>Allo</p>
   <el-app></el-app>
   <p>Voilà</p>
-  <script data-src="app.riot" type="riot"></script>
+  <script data-src="el-app.riot" type="riot"></script>
   <script src="node_modules/riot/riot+compiler.min.js"></script>
-  <script src="main.js"></script>
   <script>
     riot.compile().then(() => riot.mount('el-app', { message: 'Ding dang dong' }))
   </script>
