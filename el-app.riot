@@ -1,12 +1,15 @@
 <el-app>
   <p>{props.message}</p>
+  <raw-tag html={props.message} />
+
   <script>
     export default {
       onBeforeMount(props, state) {
         // before the component is mounted
-        console.log('BEFORE-MOUNT', props, state)
+        // console.log('BEFORE-MOUNT', props, state, this, Object.keys(this), this.root)
         document.title = props.message
       },
+      /*
       onMounted(props, state) {
         // right after the component is mounted on the page
         console.log('MOUNT', props, state)
@@ -27,6 +30,7 @@
         // when the component is removed from the page
         console.log('UNMOUNT', props, state)
       }
+      */
     }
 
 
