@@ -1,3 +1,34 @@
 <el-app>
-  <p>{ props.message }</p>
+  <p>{props.message}</p>
+  <script>
+    export default {
+      onBeforeMount(props, state) {
+        // before the component is mounted
+        console.log('BEFORE-MOUNT', props, state)
+        document.title = props.message
+      },
+      onMounted(props, state) {
+        // right after the component is mounted on the page
+        console.log('MOUNT', props, state)
+      },
+      onBeforeUpdate(props, state) {
+        // allows recalculation of context data before the update
+        console.log('BEFORE-UPDATE', props, state)
+      },
+      onUpdated(props, state) {
+        // right after the component template is updated after an update call
+        console.log('UPDATE', props, state)
+      },
+      onBeforeUnmount(props, state) {
+        // before the component is removed
+        console.log('BEFORE-UNMOUNT', props, state)
+      },
+      onUnmounted(props, state) {
+        // when the component is removed from the page
+        console.log('UNMOUNT', props, state)
+      }
+    }
+
+
+  </script>
 </el-app>
